@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "gpu-science-day-julia"
+version = "0.1.0"
+description = ""
+authors = ["marius <mariusmillea@gmail.com>"]
+readme = "README.md"
+packages = [{include = "gpu_science_day_julia"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+notebook = "^6"
+rise = "^5.7.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

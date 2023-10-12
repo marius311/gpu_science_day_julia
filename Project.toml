@@ -1,0 +1,9 @@
+[deps]
+BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
+CUDA = "052768ef-5323-5732-b1bb-66c8b64840ba"
+CUDADistributedTools = "835a5dab-0b58-4298-9862-26ab2a34aefd"
+ClusterManagers = "34f1f09b-3a8b-5176-ab39-66d58a4d544e"
+MPI = "da04e1cc-30fd-572f-bb4f-1f8673147195"
+MPIClusterManagers = "e7922434-ae4b-11e9-05c5-9780451d2c66"
+MPIPreferences = "3da0fdf6-3ccc-4f1b-acd9-58baa6c99267"
+ParameterizedNotebooks = "efe69fdf-5f6b-4971-99df-296990405262"
