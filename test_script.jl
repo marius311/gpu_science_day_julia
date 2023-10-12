@@ -7,10 +7,9 @@ srun /global/u1/m/marius/.julia/juliaup/julia-1.9.3+0.x64.linux.gnu/bin/julia $(
 exit 0
 # =#
 
-using MPI, MPIClusterManagers, Distributed, CUDA, CUDADistributedTools
+using MPIClusterManagers, Distributed, CUDA, BenchmarkTools
 
-mgr = MPIClusterManagers.start_main_loop(MPI_TRANSPORT_ALL)
-CUDADistributedTools.assign_GPU_workers()
+mgr = MPIClusterManagers.start_main_loop(MPIClusterManagers.MPI_TRANSPORT_ALL)
 
 let
     carr = cu(rand(10_000_000))

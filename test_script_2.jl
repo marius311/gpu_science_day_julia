@@ -14,10 +14,9 @@ exit 0
 
 # =#
 
-using MPI, MPIClusterManagers, Distributed, CUDA, CUDADistributedTools
+using MPIClusterManagers, Distributed, CUDA, BenchmarkTools, ParameterizedNotebooks
 
-mgr = MPIClusterManagers.start_main_loop(MPI_TRANSPORT_ALL)
-CUDADistributedTools.assign_GPU_workers()
+mgr = MPIClusterManagers.start_main_loop(MPIClusterManagers.MPI_TRANSPORT_ALL)
 
 nb = ParameterizedNotebook("talk.ipynb", sections=("Multi-GPU (multiple nodes, MPI, notebooks)",))
 nb()
